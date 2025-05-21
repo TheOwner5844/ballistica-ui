@@ -8,7 +8,7 @@
     "clean": "rimraf ./dist",
     "watch": "ng build --watch --configuration development",
     "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\"",
-    "build-deploy": "npm run clean && node make.js && ng build --base-href / && node postbuild.js && npm run copy-404",
+    "build-deploy": "npm run clean && node make.js && ng build --base-href /server-manager/ && node postbuild.js && npm run copy-404",
     "copy-404": "cp dist/server-manager/index.html dist/server-manager/404.html",
     "test": "ng test",
     "lint": "ng lint"
@@ -66,6 +66,8 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~5.4.5"
+    "typescript": "~5.4.5",
+    "rimraf": "^3.0.2",
+    "prettier": "^2.8.8"
   }
 }
