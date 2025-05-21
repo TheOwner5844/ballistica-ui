@@ -20,9 +20,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/server-manager",
+            "outputPath": "dist/server-manager",  // BURASI DÜZELTİLDİ
             "index": "src/index.html",
-            "baseHref": "/",
             "polyfills": [
               "src/polyfills.ts"
             ],
