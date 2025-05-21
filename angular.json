@@ -20,10 +20,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": {
-              "base": "dist/server-manager"
-            },
+            "outputPath": "dist/server-manager",
             "index": "src/index.html",
+            "baseHref": "/",
             "polyfills": [
               "src/polyfills.ts"
             ],
